@@ -1,9 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes,Route } from 'react-router-dom';
+
+
+import App from './App';
+
+import Developer from './components/developer/Developer';
+import Usage from './components/developer/Usage';
+
+import Creator from './components/cc/Creator';
+import Boost from './components/cc/Boost';
+
+import Profile from './components/Profile';
+
+import Login from './components/Login';
+import Register from './components/Register';
+
+import Checkout from './components/paymentPortal/Checkout';
+import Cancel from './components/paymentPortal/Cancel';
+import Success from './components/paymentPortal/Success';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,7 +28,21 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path=''
+        
+        <Route path='/developer' element={<Developer />} />
+        <Route path='/developer/usage' element={<Usage/>}></Route>
+
+        <Route path='/creators' element={<Creator/>}/>
+        <Route path='/creators/boost' element={<Boost/>}/>
+        
+        <Route path='/profile' element={<Profile /> }/>
+        
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/register' element={<Register/>}/>
+        
+        <Route path='/checkout' element={<Checkout/>}/>
+        <Route path='/cancel' element={<Cancel/>}/>
+        <Route path='/success' element={<Success/>}/>
         
       </Routes>
     </BrowserRouter>
