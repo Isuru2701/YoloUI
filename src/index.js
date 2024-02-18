@@ -53,7 +53,7 @@ root.render(
         <Route path='/cancel' element={<Cancel/>}/>
         <Route path='/success' element={<Success/>}/>
 
-        <Route path='/admin/' element={<AdminLogin/>}/>
+        <Route path='/admin' element={<AdminLogin/>}/>
         <Route path='/admin/collections' element={<AdminCollections/>}/>
         <Route path='/admin/contents' element={<AdminContents/>}/>
 

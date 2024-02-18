@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Cookies from 'js-cookie';
 import '../styles/user.css';
+
 function Register() {
     const [name, setName] = useState('');
     const [country, setCountry] = useState('');
