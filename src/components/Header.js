@@ -1,8 +1,22 @@
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
 function Header(){
     return (
-        <header>
-            <h1>My React App</h1>
-        </header>
+        <Navbar expand="lg" className="bg-body-tertiary" data-bs-theme="dark">
+        <Container>
+          <Navbar.Brand href="/">YOLO</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="/creators">Creators</Nav.Link>
+              <Nav.Link href="/developers">Developers</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     );
 }
 

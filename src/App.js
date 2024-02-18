@@ -2,10 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 import React, { Component } from 'react';
 import './styles/prompt.css';
-
+import Header from './components/Header';
 function App() {
   return (
     <>
+    
       <div class="landing">
         <div class="landing-content">
           <h1>Hello there!</h1>

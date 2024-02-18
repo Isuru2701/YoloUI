@@ -4,6 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes,Route } from 'react-router-dom';
 
+import Header from './components/Header';
 
 import App from './App';
 
@@ -22,15 +23,22 @@ import Checkout from './components/paymentPortal/Checkout';
 import Cancel from './components/paymentPortal/Cancel';
 import Success from './components/paymentPortal/Success';
 
+import AdminDashboard from './components/admin/AdminDashboard';
+import AdminLogin from './components/admin/AdminLogin';
+
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Header/>
     <BrowserRouter>
       <Routes>
+
         <Route path="/" element={<App />} />
         
-        <Route path='/developer' element={<Developer />} />
-        <Route path='/developer/usage' element={<Usage/>}></Route>
+        <Route path='/developers' element={<Developer />} />
+        <Route path='/developers/usage' element={<Usage/>}></Route>
 
         <Route path='/creators' element={<Creator/>}/>
         <Route path='/creators/boost' element={<Boost/>}/>
@@ -43,7 +51,10 @@ root.render(
         <Route path='/checkout' element={<Checkout/>}/>
         <Route path='/cancel' element={<Cancel/>}/>
         <Route path='/success' element={<Success/>}/>
-        
+
+        <Route path='/admin/' element={<AdminLogin/>}/>
+        <Route path='/admin/dashboard' element={<AdminDashboard/>}/>
+
       </Routes>
     </BrowserRouter>
     

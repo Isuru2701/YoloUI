@@ -1,9 +1,9 @@
-function Boost() {
+function Creator() {
     return (
         <div>
-        <h1>Boost</h1>
+        <h1>Creators</h1>
         </div>
     );
 }
 
-export default Boost;
+export default Creator;
