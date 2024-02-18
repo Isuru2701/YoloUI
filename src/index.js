@@ -23,8 +23,9 @@ import Checkout from './components/paymentPortal/Checkout';
 import Cancel from './components/paymentPortal/Cancel';
 import Success from './components/paymentPortal/Success';
 
-import AdminDashboard from './components/admin/AdminDashboard';
+import AdminCollections from './components/admin/AdminCollections';
 import AdminLogin from './components/admin/AdminLogin';
+import AdminContents from './components/admin/AdminContents';
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
@@ -53,7 +54,8 @@ root.render(
         <Route path='/success' element={<Success/>}/>
 
         <Route path='/admin/' element={<AdminLogin/>}/>
-        <Route path='/admin/dashboard' element={<AdminDashboard/>}/>
+        <Route path='/admin/collections' element={<AdminCollections/>}/>
+        <Route path='/admin/contents' element={<AdminContents/>}/>
 
       </Routes>
     </BrowserRouter>
