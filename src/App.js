@@ -3,7 +3,6 @@ import './App.css';
 import React, { Component } from 'react';
 import './styles/prompt.css';
 
-import Scene from './scripts/Scene';
 function App() {
 
   return (
@@ -14,9 +13,6 @@ function App() {
           <h1>Hello there!</h1>
           <p>Get suggestions for your next movie, tv show, song, book or anime!</p>
           <button className="landing-btn" onclick="openNav()">Get Started</button>
-        </div>
-        <div >
-            <Scene modelUrl={'/models/smiley.gltf'} />
         </div>
       </div>
 

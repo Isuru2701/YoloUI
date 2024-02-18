@@ -35,20 +35,20 @@ function Login() {
 
     return (
         <>
-            <div class="registration-container">
-                <form class="registration-form">
+            <div className="registration-container">
+                <form className="registration-form">
                     <h2>Login</h2>
-                    <div class="form-group">
-                        <label for="email">Email</label>
+                    <div className="form-group">
+                        <label htmlFor="email">Email</label>
                         <input type="email" id="email" name="email" required onChange={(e) => setUsername(e.target.value)}/>
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                         <label for="password">Password</label>
                         <input type="password" id="password" name="password" required onChange={(e) => setPassword(e.target.value)}/>
                     </div>
                     <button className='login-button' type="submit" onClick={handleLogin}>Register</button>
                     <br></br>
-                    <a class="redirect" href="/register">New to the platform? create an account for free.</a>
+                    <a className="redirect" href="/register">New to the platform? create an account for free.</a>
                 </form>
             </div>
 

@@ -27,7 +27,6 @@ import AdminCollections from './components/admin/AdminCollections';
 import AdminLogin from './components/admin/AdminLogin';
 import AdminContents from './components/admin/AdminContents';
 
-import Test from './components/test';
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
@@ -38,7 +37,6 @@ root.render(
     <BrowserRouter>
       <Routes>
 
-        <Route path='/test' element={<Test/>}/>
 
         <Route path="/" element={<App />} />
         

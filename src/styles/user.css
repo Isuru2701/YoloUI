@@ -1,29 +1,31 @@
 @import url('colors.css');
 
-body{
-    /* background: linear-gradient(rgba(16, 5, 48, 0.9), rgba(16, 5, 48, 0.8)); */
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family:Arial, Helvetica, sans-serif;
     background-color: rgb(6, 0, 17);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    font-family:Arial, Helvetica, sans-serif;
+    font-size: 13px;
 
 }
 
 .registration-container {
-    margin: auto;
     background-color: var(--background-color);
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 50%;
+    width: 90%;
     min-width: 250px;
+    max-width: 400px;
     margin-top: 40px;
-
-    justify-content: center;
-    align-items: center;
-    
-
 }
 .inline{
     display: inline-flex;
@@ -63,16 +65,14 @@ input {
     background-color: var(--input-bg);
     color: #fff;
     outline: none;
-    margin: auto;
 }
 
 input[type="checkbox"] {
     margin-right: 5px;
 }
 
-.login-button {
-    margin: 100;
-    width: 95%;
+button {
+    width: 100%;
     padding: 10px;
     border: none;
     border-radius: 4px;
