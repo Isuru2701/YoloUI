@@ -26,9 +26,7 @@ function Login() {
 
             // Set username as a cookie
             Cookies.set('username', data.username);
-
-            // Optionally, you can redirect the user to another page
-            // window.location.href = '/dashboard';
+            window.location.href = '/';
 
         } catch (error) {
             console.error('Error logging in:', error.message);
