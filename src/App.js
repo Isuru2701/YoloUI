@@ -24,23 +24,17 @@ function App() {
         </div>
       </div>
 
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-
       <div class="content">
         {/* <!--this is where my content should go--> */}
-        <div class="prompt">
+        <div class="prompt-content">
           <label htmlFor="prompt-text" class="prompt-text">
           </label>
           <textarea name="" id="prompt-text" cols="30" rows="10"></textarea>
         </div>
         <div>
-          <button class="prompt-submit" onclick="getKeys()">
+          <center><button class="prompt-submit" onclick="getKeys()">
             GET SUGGESTIONS
-          </button>
+          </button></center>
         </div>
         <div class="material">
           <div class="show-area ">
