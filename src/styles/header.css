@@ -11,6 +11,10 @@
     cursor: pointer;
 }
 
+.btn-group-right{
+  float:right;
+}
+
 *{
   text-decoration: none !important;  
   color:white !important; 

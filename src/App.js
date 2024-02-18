@@ -3,33 +3,20 @@ import './App.css';
 import React, { Component } from 'react';
 import './styles/prompt.css';
 
-import { createRoot } from 'react-dom/client';
-import { Canvas } from '@react-three/fiber';
-import { Loader } from '@react-three/drei';
+import Scene from './scripts/Scene';
 function App() {
 
   return (
     <>
-
+      <br/>
       <div class="landing">
         <div class="landing-content">
           <h1>Hello there!</h1>
           <p>Get suggestions for your next movie, tv show, song, book or anime!</p>
           <button className="landing-btn" onclick="openNav()">Get Started</button>
         </div>
-        <div>
-          <div id='webgl'>
-            <Canvas >
-              <ambientLight intensity={0.5} />
-              <directionalLight color='red' position={[0, 10, 0]} />
-              <mesh>
-                
-                <meshStandardMaterial attach="material" color="hotpink" />
-              </mesh>
-            </Canvas>
-
-          </div>
-
+        <div >
+            <Scene modelUrl={'/models/smiley.gltf'} />
         </div>
       </div>
 

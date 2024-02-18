@@ -18,10 +18,10 @@ function Header() {
                     </Nav>
                 </Navbar.Collapse>
             </Container>
-
-            <Button variant='tertiary'><a href='/register'>Register</a></Button>
-            <Button variant='tertiary'><a href='/login'>Login</a></Button>
-
+            <div className='btn-group-right'>
+                <Button variant='tertiary'><a href='/register'>Register</a></Button>
+                <Button variant='tertiary'><a href='/login'>Login</a></Button>
+            </div>
         </Navbar>
     );
 }
