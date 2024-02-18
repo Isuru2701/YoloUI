@@ -18,9 +18,10 @@ function Header() {
                     </Nav>
                 </Navbar.Collapse>
             </Container>
-
+            <div style={{float:'right'}}>
             <Button variant='tertiary'><a href='/register'>Register</a></Button>
             <Button variant='tertiary'><a href='/login'>Login</a></Button>
+            </div>
 
         </Navbar>
     );

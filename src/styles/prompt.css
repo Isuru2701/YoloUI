@@ -16,7 +16,56 @@ body{
     color:white;
     align-items: flex-start;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    height:100vh
+    /* Set the background image */
+    
+    /* Center and scale the background image */
+    background: linear-gradient(-45deg, rgba(1, 1, 1, 0) 0%, rgb(0, 0, 0) 100%);
+    background-position: center;
+    background-size: cover;
+    /* Set up the fade-in animation */
+    animation: fade-in 2s ease-in-out;
+    
+    
+      /* Define the fade-in animation */
+
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 75%;
+    z-index: -1;
+    overflow: hidden;
+    
+    background-position: center;
+    background-size: cover;
+    animation: fade-in 2s ease-in-out;
+    opacity: 0.5;
+  
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+.landing-btn {
+    background-color: var(--main-button);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bolder;
+    text-transform: capitalize;
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 .landing h1{
@@ -46,6 +95,7 @@ body{
     text-align: center;
     align-items: center;
     justify-content: centers;
+    background-color: rgba(0, 0, 0, 0.8)
 }
 .prompt-submit{
     width: 65%;

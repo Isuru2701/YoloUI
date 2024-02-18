@@ -11,46 +11,33 @@ function App() {
   return (
     <>
 
-      <div class="landing">
-        <div class="landing-content">
-          <h1>Hello there!</h1>
-          <p>Get suggestions for your next movie, tv show, song, book or anime!</p>
-          <button className="landing-btn" onclick="openNav()">Get Started</button>
-        </div>
-        <div>
-          <div id='webgl'>
-            <Canvas >
-              <ambientLight intensity={0.5} />
-              <directionalLight color='red' position={[0, 10, 0]} />
-              <mesh>
-                
-                <meshStandardMaterial attach="material" color="hotpink" />
-              </mesh>
-            </Canvas>
-
+      <div className="landing">
+      
+        <div className="landing-content">
+          <div>
+            <h1>Hello </h1>
+            <h1>there!</h1>
           </div>
-
+          <h2 style={{padding: 10}}>Finding it hard to find something to watch? We got just the thing!</h2>
+          <center><button className="landing-btn"><a href="/#prompt">Happy Prompting!</a></button></center>
+          <img src='movie_grid.jpg' alt='movie' className='background-image'/>  
         </div>
       </div>
+
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
 
       <div class="content">
         {/* <!--this is where my content should go--> */}
         <div class="prompt">
           <label htmlFor="prompt-text" class="prompt-text">
-            Enter your Prompt here :
           </label>
           <textarea name="" id="prompt-text" cols="30" rows="10"></textarea>
         </div>
         <div>
-          <select class="types" id="materialType">
-            <option value="movie">Movie</option>
-            <option value="tv">Tv series</option>
-            <option value="song">songs</option>
-            <option value="video">Youtube</option>
-            <option value="books">Books</option>
-            <option value="anime-movie">anime movies</option>
-            <option value="anime-tv">anime shows</option>
-          </select>
           <button class="prompt-submit" onclick="getKeys()">
             GET SUGGESTIONS
           </button>
