@@ -19,7 +19,8 @@ function App() {
             <h1>there!</h1>
           </div>
           <h2 style={{padding: 10}}>Finding it hard to find something to watch? We got just the thing!</h2>
-          <center><button className="landing-btn"><a href="/#prompt">Happy Prompting!</a></button></center>
+
+          <center><a href="/#prompt">Express yourself to our AI chatbot to get suggestions!</a></center>
           <img src='movie_grid.jpg' alt='movie' className='background-image'/>  
         </div>
       </div>
