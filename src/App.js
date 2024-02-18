@@ -7,36 +7,32 @@ function App() {
 
   return (
     <>
-      <br/>
-      <div class="landing">
-        <div class="landing-content">
-          <h1>Hello there!</h1>
-          <p>Get suggestions for your next movie, tv show, song, book or anime!</p>
-          <button className="landing-btn" onclick="openNav()">Get Started</button>
+
+      <div className="landing">
+      
+        <div className="landing-content">
+          <div>
+            <h1>Hello </h1>
+            <h1>there!</h1>
+          </div>
+          <h2 style={{padding: 10}}>Finding it hard to find something to watch? We got just the thing!</h2>
+
+          <center><a href="/#prompt">Express yourself to our AI chatbot to get suggestions!</a></center>
+          <img src='movie_grid.jpg' alt='movie' className='background-image'/>  
         </div>
       </div>
 
       <div class="content">
         {/* <!--this is where my content should go--> */}
-        <div class="prompt">
+        <div class="prompt-content">
           <label htmlFor="prompt-text" class="prompt-text">
-            Enter your Prompt here :
           </label>
           <textarea name="" id="prompt-text" cols="30" rows="10"></textarea>
         </div>
         <div>
-          <select class="types" id="materialType">
-            <option value="movie">Movie</option>
-            <option value="tv">Tv series</option>
-            <option value="song">songs</option>
-            <option value="video">Youtube</option>
-            <option value="books">Books</option>
-            <option value="anime-movie">anime movies</option>
-            <option value="anime-tv">anime shows</option>
-          </select>
-          <button class="prompt-submit" onclick="getKeys()">
+          <center><button class="prompt-submit" onclick="getKeys()">
             GET SUGGESTIONS
-          </button>
+          </button></center>
         </div>
         <div class="material">
           <div class="show-area ">
