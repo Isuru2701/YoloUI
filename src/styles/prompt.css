@@ -55,20 +55,20 @@ body{
     
     background-position: center;
     background-size: cover;
-    animation: fade-in 2s ease-in-out;
+    /* animation: fade-in 2s ease-in-out; */
     opacity: 0.5;
     object-fit: cover;
   
 }
 
-@keyframes fade-in {
+/* @keyframes fade-in {
     0% {
       opacity: 0;
     }
     100% {
       opacity: 1;
     }
-  }
+  } */
 .landing-btn {
     background-color: var(--main-button);
     color: white;
