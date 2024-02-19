@@ -16,7 +16,7 @@ function App() {
         <div className="landing-content">
           <div>
             <h1>Hello </h1>
-            <h1>there!</h1>
+            <h1>There!</h1>
           </div>
           <h2 style={{padding: 10}}>Finding it hard to find something to watch? We got just the thing!</h2>
 

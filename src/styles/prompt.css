@@ -42,6 +42,48 @@ body{
 
 }
 
+.landing h1 {
+    color: white;
+    font-family: 'Lulo Clean WO1 One Bold';
+    text-align: center;
+    font-size: 100px;
+    overflow: hidden;
+    border-right: .15em solid rgb(236, 236, 236); /* The typewriter cursor */
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+        typing 2s steps(40, end),
+        blink-caret .75s step-end 3.5s,
+        fade-out 0.5s 4.25s forwards; /* Add fade-out animation */
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: rgb(255, 255, 255); }
+}
+
+/* Add fade-out animation */
+@keyframes fade-out {
+    0% { border-color: rgb(255, 255, 255); }
+    100% { border-color: transparent; }
+}  
+  .typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(252, 247, 238); /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+
 .background-image {
     position: absolute;
     top: 0;
