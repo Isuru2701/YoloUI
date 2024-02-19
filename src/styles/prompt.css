@@ -280,3 +280,43 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+
+@media screen and (max-width: 768px) {
+    .landing-content {
+      height: auto; /* Adjust the height for smaller screens */
+    }
+  
+    .landing {
+      flex-direction: column; /* Stack the children vertically on smaller screens */
+    }
+  
+    .landing-btn {
+      font-size: 16px; /* Adjust the font size for smaller screens */
+      padding: 5px; /* Adjust the padding for smaller screens */
+    }
+  
+    .landing h1 {
+      font-size: 50px; /* Adjust the font size for smaller screens */
+    }
+  
+    .content .prompt-content textarea {
+      width: 100%; /* Make the textarea full width on smaller screens */
+    }
+  
+    .prompt-submit {
+      width: 100%; /* Make the submit button full width on smaller screens */
+    }
+  
+    .show-area {
+      width: 100%; /* Make the show area full width on smaller screens */
+    }
+  
+    .gig {
+      flex-basis: calc(100% - 10px); /* Make the gig items full width on smaller screens */
+    }
+  
+    .popup {
+      max-width: 100%; /* Make the popup full width on smaller screens */
+    }
+  }

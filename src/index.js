@@ -9,7 +9,7 @@ import Header from './components/Header';
 import App from './App';
 
 import Developer from './components/developer/Developer';
-import Usage from './components/developer/Usage';
+import Docs from './components/developer/Docs';
 
 import Creator from './components/cc/Creator';
 import Boost from './components/cc/Boost';
@@ -39,7 +39,7 @@ root.render(
         <Route path="/" element={<App />} />
         
         <Route path='/developers' element={<Developer />} />
-        <Route path='/developers/usage' element={<Usage/>}></Route>
+        <Route path='/developers/docs' element={<Docs />} />
 
         <Route path='/creators' element={<Creator/>}/>
         <Route path='/creators/boost' element={<Boost/>}/>

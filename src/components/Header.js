@@ -9,7 +9,7 @@ function Header() {
     return (
         <Navbar expand="lg" className="bg-body-tertiary" data-bs-theme="dark">
             <Container>
-                <Navbar.Brand href="/">YOLO</Navbar.Brand>
+                <Navbar.Brand href="/"><h1><strong>YOLO</strong></h1></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">

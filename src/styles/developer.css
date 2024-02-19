@@ -1,32 +1,79 @@
-.load{
-    display: none;
+@font-face{
+    font-family: 'Lulo Clean WO1 One Bold';
+    src: url("/public/lulo_clean_bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
 }
 
-.content h2{
-    color: white;
-    font-family:Arial, Helvetica, sans-serif;
-    margin-left: 10%;
-}
+h1 {
+    font-family: 'Lulo Clean WO1 One Bold';
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
 
-.mob-area{
-    background-color: var(--background-color);
+}
+.text-blob {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
     border-radius: 10px;
-    max-width: 400px;
-    width: 100%;
-    min-width: 250px;
-    margin: 0 auto;
-    padding: 10px;
-    min-height: 40vh;
+    border: 1px solid;
+    margin: auto; /* Center the text horizontally and vertically */
+    padding: 20px; /* Add some padding inside the box */
+    color: black; /* Set the text color to black */
+    text-align: center; /* Center the text within its container */
+    width: 50%; /* Set a width for the text container */
+    height: 50%; /* Set a height for the text container */
+    display: flex; /* Use flexbox to center the text vertically */
+    align-items: center; /* Center the text vertically */
+    justify-content: center; /* Center the text horizontally */
+    position: relative; /* Set the position to relative */
+    background: transparent; /* Remove the fill */
+    border-color: linear-gradient(90deg, purple, white, purple);
 }
-.mob-area input{
-    width: 80%;
-    background-color: var(--input-bg);
-    margin: 10px;
-    padding: 20px;
-    border: none;
+
+.dev-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; /* Center the container horizontally */
+    padding: 20px; /* Add some padding inside the container */
+    border-radius: 20px; /* Add rounded corners to the container */
+    /* background-color: #100227; Add a background color to the container */
+    width:80%;
+
+}
+
+
+
+.col-container {
+    margin-left: 20px;
+}
+
+.heading{
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.generate-btn {
+    background-color: var(--main-button);
     color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bolder;
+    text-transform: capitalize;
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
-.mob-area .copy{
+
+.copy{
     float: right;
     margin: 10px;
     margin-right: 27px;
@@ -34,171 +81,60 @@
     padding: 10px;
     border-radius: 10px;
     width: 50px;
+    height: 50px;
     background-color: var(--input-bg);
     color: white;
     border: none;
+    
 }
-.generate{
-    width: 300px;
-    background: var(--main-button);
-    border: none;
-    border-radius: 10px;
-    padding: 9px;
-    margin: 10px;
-    color: white;
-}
-.more{
-    display: inline-flex;
-    width: 100%;
+.docs-container {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    margin-top: 20px
-}
-.more img{
-    height: 100px;
-    width: 50px;
-}
-.ics{
-    color: white;
-    font-size: 80px;
-    margin: 10px;
-
-}
-
-.usage span, .docs span{
-    color:  white;
-    font-family:Arial, Helvetica, sans-serif;
-    margin-bottom: 5px;
-}
-
-/* CSS for Checkout Page */
-.price{
-    background-color: green;
-    max-width: 200px;
-    padding: 20px;
-    margin: 0 auto;
-    color: white;
-    font-size: 30px;
-    font-weight: bolder;
-    border-radius: 10px;
-}
-.checkout {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.checkout p {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.checkout-button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-bottom: 20px;
-    cursor: pointer;
-}
-
-.checkout-button:hover {
-    background-color: #45a049;
-}
-
-.checkout img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-}
-
-.topic{
-    color: white;
-    text-transform: capitalize;
-    font-size: 20px;
-    font-family:Arial, Helvetica, sans-serif;
-}
-.parent-agree{
-    background-color: red;
-    width: 100%;
-}
-.stripe{
-    width: 200px;
-    height: 50px;
-    margin-right: 5px;
-    background: url("https://www.singersforhire.com.au/wp-content/uploads/2019/11/secure-stripe-payment-logo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    border: none;
-
-}
-.bt-set{
-    display: inline-flex;
-}
-
-.msg{
-    color: #fff;
-    font-family:Arial, Helvetica, sans-serif;
-
-}
-.bx-sad, .bx-x, .bx-happy-heart-eyes, .bx-message-square-check{
-    font-size: 100px;
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
-    color: white;
-}
-.bx-x{
-    color: red;
-}
-.bx-message-square-check{
-    color: greenyellow
-}
-
-.checkout a button{
-    padding: 10px;
+    border-radius: 50px; /* This will create a squircle shape */
     background-color: var(--main-button);
-    border: none;
-    border-radius: 7px;
-    color: white;
-    margin-bottom: 30px;
-    cursor: pointer;
-}
-.bxs-crown{
-    color: gold;
+    padding: 10px;
+    margin-top: 20px; /* Add some space at the top */
+    margin-right: 20px; /* Add some space on the right */
 }
 
-/* Popup container */
-.popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 300px;
-    padding: 20px;
-    border-radius: 5px;
-    z-index: 1;
-  }
+.docs-icon {
+    margin-right: 10px;
+}
+
+.docs-container img{
+
+    width: 50px;
+    height: 50px;
+
+}
+
+
+.copy img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+      font-size: 24px; /* Adjust the font size for smaller screens */
+    }
   
-  /* Popup content */
-  .popup-content {
-    background-color: var(--background-color);
-    padding: 20px;
-    border-radius: 5px;
-    color: white;
-  }
+    .text-blob {
+      font-size: 16px; /* Adjust the font size for smaller screens */
+      padding: 10px; /* Adjust the padding for smaller screens */
+    }
   
-  /* Close button */
-  .close-popup {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    padding: 10px;
-    color: red;
-  }
+    .dev-container {
+      flex-direction: column; /* Stack the children vertically on smaller screens */
+    }
   
+    .api-token {
+      width: 100%; /* Make the API token input full width on smaller screens */
+    }
+  
+    .docs-container {
+      width: 100%; /* Make the docs container full width on smaller screens */
+    }
+  }
