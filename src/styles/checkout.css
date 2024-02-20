@@ -1,0 +1,49 @@
+@font-face{
+    font-family: 'Lulo Clean WO1 One Bold';
+    src: url("/public/lulo_clean_bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+.checkout-header h1{
+    font-family: 'Lulo Clean WO1 One Bold';
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.checkout-body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 1px solid;
+    margin: auto; /* Center the text horizontally and vertically */
+    padding: 20px; /* Add some padding inside the box */
+    color: black; /* Set the text color to black */
+    text-align: center; /* Center the text within its container */
+    width: 50%; /* Set a width for the text container */
+    height: 50%; /* Set a height for the text container */
+    display: flex; /* Use flexbox to center the text vertically */
+    align-items: center; /* Center the text vertically */
+    justify-content: center; /* Center the text horizontally */
+    position: relative; /* Set the position to relative */
+    background: transparent; /* Remove the fill */
+}
+
+.benefits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; /* Center the container horizontally */
+    padding: 20px; /* Add some padding inside the container */
+    border-radius: 20px; /* Add rounded corners to the container */
+    /* background-color: #100227; Add a background color to the container */
+    width:80%;
+}
+
+.make-payment {
+    margin-left: 20px;
+}

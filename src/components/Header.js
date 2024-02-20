@@ -15,7 +15,7 @@ function Header() {
                     <Nav className="me-auto">
                         <Nav.Link href="/creators"><Button variant='secondary'>Creators</Button></Nav.Link>
                         <Nav.Link href="/developers"><Button variant='secondary'>Developers</Button></Nav.Link>
-                        <Nav.Link>
+                        <Nav.Link href='/checkout?t=premium'>
                             <Button
                                 variant='secondary'
                                 style={{
@@ -24,7 +24,7 @@ function Header() {
                                     border: 'none',
                                 }}
                             >
-                                <a href='/profile' style={{ color: 'black' }}>Explore Premium</a>
+                                <a >Explore Premium</a>
                             </Button>
                         </Nav.Link>
                     </Nav>

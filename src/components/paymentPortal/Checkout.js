@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../../styles/developer.css';
+import '../../styles/checkout.css';
 
 function Checkout() {
     const [paymentType, setPaymentType] = useState('');
@@ -64,19 +64,32 @@ function Checkout() {
 
     return (
         <>
-            <div className="content">
-                <div className="mob-area">
-                    <div className="checkout">
-                        <p className="topic">{topic}</p>
-                        <p className="price">{price}</p>
-                        <img src="assets/checkout.png" alt="Attractive Image" />
-                        <div className="bt-set">
-                            <button className="stripe"></button>
-                            <button onClick={premiumPay} className="checkout-button">Checkout</button>
-                        </div>
-                    </div>
-                </div>
+            <br/>
+           <div className='checkout-header'>
+                <h1>Checkout</h1>
+           </div>
+           <div className='checkout-body'>
+            <div className='benefits'>
+                <ul>
+                    <li>More stuff</li>
+                    <li>More stuff</li>
+                    <li>More stuff</li>
+                    <li>More stuff</li>
+                    <li>More stuff</li>
+                    <li>More stuff</li>
+                    <li>More stuff</li>
+
+                </ul>
+                
+
             </div>
+            <div className='make-payment'>
+                pay here
+
+            </div>
+
+           </div>
+
         </>
     );
 }
