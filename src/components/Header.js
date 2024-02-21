@@ -4,8 +4,12 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import '../styles/header.css';
+import { FiMenu, FiX} from 'react-icons/fi';
+import React, { useState } from 'react';
 
 function Header() {
+
+    const [isOpen, setIsOpen] = useState(false);
     return (
         <Navbar expand="lg" className="bg-body-tertiary" data-bs-theme="dark">
             <Container style={{alignItems: 'center'}}>
@@ -17,6 +21,7 @@ function Header() {
                         <Nav.Link href="/developers"><Button variant='secondary'>Developers</Button></Nav.Link>
                         <Nav.Link href='/checkout?t=premium'>
                             <Button
+                            
                                 variant='secondary'
                                 style={{
                                     background: 'linear-gradient(to right, #ffd700, #ffcc00)',
@@ -31,11 +36,9 @@ function Header() {
                 </Navbar.Collapse>
             </Container>
             <div>
-                <Button variant='secondary' style={{marginRight: 2}}><a href='/register'>Register</a></Button>
-
-
-
-                <Button variant='secondary'><a href='/login'>Login</a></Button>
+                <Button variant='tertiary' onClick={() => setIsOpen(!isOpen)}>
+                    {isOpen ? <FiX size={30}/> : <FiMenu size={30}/>}
+                </Button>
             </div>
 
         </Navbar>

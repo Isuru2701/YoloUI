@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import '../../styles/creator.css';
 import Cookies from 'js-cookie';
+import { Nav, Navbar } from 'react-bootstrap';
+import '../../styles/creatorDashboard.css';
 
 function Creator() {
     const [phone, setPhone] = useState('');
@@ -82,23 +84,45 @@ function Creator() {
             });
     };
 
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleToggle = () => setIsOpen(!isOpen);
     return (
-        <div className="content">
-            
-            <div className="mob-area">
-                <div className="otp-top">
-                    <div className="otp-topic">2 step verification from Whatsapp</div>
-                    <i className="bx bxl-whatsapp-square otp-icon"></i>
-                </div>
-                <div className="phoneInp">
-                    <input type="tel" id="phoneNumber" onChange={updatePhone} value={phone} />
-                    <input type="hidden" id="countryCode" name="countryCode" />
-                </div>
-                <span className="warning">*Do not repeat the country code | Enter number in given format</span>
-                <button id="getOtp" onClick={getOtp}>Get OTP</button>
-                <input type="number" id="otp" minLength="6" maxLength="6" value={otp} onChange={(e) => setOtp(e.target.value)} />
-                <button id="sub" onClick={setRole}>Unlock Creator</button>
+        <div className='cc-container'>
+            <Navbar expand="lg" expanded={isOpen} onToggle={handleToggle}>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="cc-bar"
+                        activeKey="/home"
+                        onSelect={selectedKey => alert(`selected ${selectedKey}`)}
+                    >
+                        <div className="sidebar-sticky"></div>
+                        <Nav.Item>
+                            <Nav.Link href="/home"></Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link eventKey="link-1">Link</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link eventKey="link-2">Link</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link eventKey="disabled" disabled>
+                                Disabled
+                            </Nav.Link>
+                        </Nav.Item>
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
+            <header className='cc-header'>
+
+
+            </header>
+
+            <div className='cc-body'>
             </div>
+
+
         </div>
     );
 }

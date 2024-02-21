@@ -5,23 +5,40 @@ import './styles/prompt.css';
 
 import { createRoot } from 'react-dom/client';
 import { Canvas } from '@react-three/fiber';
-import { Loader } from '@react-three/drei';
+import { Loader, OrbitControls } from '@react-three/drei';
+import { useGLTF } from '@react-three/drei';
+
+import { useLoader } from '@react-three/fiber';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import { AmbientLight } from 'three';
+
+function Model({ url }) {
+  const gltf = useLoader(GLTFLoader, url)
+  return (
+    <primitive object={gltf.scene} scale={2}/>
+  )
+}
+
 function App() {
 
   return (
     <>
 
       <div className="landing">
-      
+
         <div className="landing-content">
           <div>
             <h1>Hello </h1>
             <h1>There!</h1>
           </div>
-          <h2 style={{padding: 10}}>Finding it hard to find something to watch? We got just the thing!</h2>
+          <h2 style={{ padding: 10 }}>Finding it hard to find something to watch? We got just the thing!</h2>
 
           <center><a href="/#prompt">Express yourself to our AI chatbot to get suggestions!</a></center>
-          <img src='movie_grid.jpg' alt='movie' className='background-image'/>  
+          <Canvas>
+            <ambientLight intensity={10}/>
+            <OrbitControls />
+            <Model url="/models/smiley.gltf" />
+          </Canvas>
         </div>
       </div>
 

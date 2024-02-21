@@ -1,0 +1,14 @@
+.cc-container {
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+}
+
+.cc-bar {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-grey);
+    width: 20%;
+    height: 100vh;
+    
+}

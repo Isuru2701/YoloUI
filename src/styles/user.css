@@ -1,7 +1,7 @@
 @import url('colors.css');
 
 body{
-    background: linear-gradient(rgba(16, 5, 48, 0.9), rgba(16, 5, 48, 0.8));
+    /* background: linear-gradient(rgba(16, 5, 48, 0.9), rgba(16, 5, 48, 0.8)); */
     background-color: rgb(6, 0, 17);
     background-size: cover;
     background-position: center;
